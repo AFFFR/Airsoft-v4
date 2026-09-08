@@ -1,1 +1,28 @@
-
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+<title>Airsoft Quest V4</title>
+</head>
+<body>
+<header><b>⚔ AIRSOFT QUEST V4</b><span id="conn">● OFFLINE</span></header>
+<section id="join" class="screen">
+<h1>ENTRAR NO JOGO</h1>
+<input id="name" placeholder="Nome">
+<select id="team"><option value="RED">🔴 VERMELHA</option><option value="BLUE">🔵 AZUL</option><option value="GM">👑 GM</option></select>
+<button id="joinBtn">ENTRAR</button>
+</section>
+<section id="app" class="screen hidden">
+<div class="top"><b id="who"></b><b id="score"></b></div>
+<div id="map"></div>
+<div id="next" class="card"></div>
+<div class="actions"><button id="gps">📍 GPS</button><button id="qr">📷 LER QR</button></div>
+<div id="gm" class="hidden card"></div>
+</section>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body></html>
